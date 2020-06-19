@@ -7,9 +7,9 @@
 ## How to use?
 1. Create a `./credentials.json` file containing: <br>
     a. email id <br>
-    b. password
-    <br>
-2. Run `chmod +x ./login.sh`
-3. Run `./login.sh`
-4. You can get the course information and the links to the __free courses__ in the __freeCourses.json__ file.
+    b. password <br>
+2. Edit the `login.sh` file to add the search query.
+3. Run `chmod +x ./login.sh`
+4. Run `./login.sh`
+5. You can get the course information and the links to the __free courses__ in the __freeCourses.json__ file.
 
