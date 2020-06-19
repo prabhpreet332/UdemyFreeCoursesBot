@@ -123,7 +123,7 @@ async function getFreeCourses(tab, email, password, query){
     }, freeCheckBox);
     
     
-    for(let i = 1; i <= 2; i++){
+    for(let i = 1; i <= 5; i++){
         delay(500);
         await tab.goto(`https://www.udemy.com/courses/search/?q=${query}&p=${i}`, {
             waitUntil: "networkidle2",
@@ -134,7 +134,7 @@ async function getFreeCourses(tab, email, password, query){
     }
     console.log(scrapedData);
     await fs.promises.writeFile(
-		"watchNext2.json",
+		"freeCourses.json",
 		JSON.stringify(scrapedData, null, 4)
 	);
 }
