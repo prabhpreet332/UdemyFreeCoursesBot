@@ -28,7 +28,7 @@ let scrapedData = [];
 	await tab.goto(urlInstagram, {
 		waitUntil: "networkidle2",
     });
-    let query = "javascript"
+    // let query = "javascript"
     
     console.log("udemy opened")
 
